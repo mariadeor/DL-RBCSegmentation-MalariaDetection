@@ -22,7 +22,6 @@ function extract_rbc(folder,snn)
             'WriteLocation',tempdir,...
             'Verbose',false);
 
-
     %STEP 3) Each of the smear labels is
         %extracted, processed and analyzed in order to extract the 
         %centroids of the erythroctytes for its later cropping.
@@ -33,7 +32,6 @@ function extract_rbc(folder,snn)
 
     nbr_images = length(pxdsSegmentation.Files);
     for i=1:nbr_images
-
 
         Ilab = imread(pxdsSegmentation.Files{i});
         Ilab = (Ilab == 1);
