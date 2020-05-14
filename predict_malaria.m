@@ -9,7 +9,7 @@ function [predictions,imds] = predict_malaria(folder, snn, cnn)
     % 3. cnn: trained CNN that classifies each of the RBCs into malaria parasitized or not.
     
     tic
-    extractRBC(folder,snn);
+    extract_rbc(folder,snn);
     [~,foldername] = fileparts(folder);
     imds = imageDatastore([pwd,'/rbcs_',foldername,'_mask']);
     predictions = classify(cnn, imds);
