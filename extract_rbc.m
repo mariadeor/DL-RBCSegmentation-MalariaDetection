@@ -55,7 +55,7 @@ function extract_rbc(folder,snn)
             [patch, flag] = get_patch(I,floor(selected.Centroid(rbc_idx,1)),floor(selected.Centroid(rbc_idx,2)),radius); % The RBCs are cropped.
             [label, ~] = get_patch(Ilab,floor(selected.Centroid(rbc_idx,1)),floor(selected.Centroid(rbc_idx,2)),radius); % The label patches are cropped.
                 if flag == 1
-                    label = centralRBCmask(label);
+                    label = mask_central_rbc(label);
                     patch = uint8(patch.*label); %Keep only the pixels of the central RBC.
                     imfilename = ([image_name(1:(length(image_name)-4)),'_',num2str(idx),'.jpg']);
                     idx = idx+1;
