@@ -5,10 +5,8 @@ function [predictions,imds] = predictMalaria(folder, snn, cnn)
     % into malaria parasitized or not.
     % Inputs: 
     % 1. folder: folder that contains the wide field blood smears.
-    % 2. snn: Semantic Neural Network that will segment the RBCs from the
-            % smears.
-    % 3. cnn: Convolutional Neural Network that classifies each of the RBCs
-            % into malaria parasitized or not.
+    % 2. snn: trained SNN to segment RBCs.
+    % 3. cnn: trained CNN that classifies each of the RBCs into malaria parasitized or not.
     
     tic
     extractRBC(folder,snn);
