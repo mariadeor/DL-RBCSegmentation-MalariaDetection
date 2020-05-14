@@ -14,15 +14,16 @@ sourceFolder = uigetdir; %It opens the browser and allows to pick the
 
 cnn = load('cnn.mat');
 cnn = cnn.net;
-ssn = load('ssn.mat');
-ssn = ssn.net;
+snn = load('snn.mat');
+snn = snn.net;
 
-[predictions, imds] = predict_malaria(sourceFolder, ssn, cnn);
+[predictions, imds] = predict_malaria(sourceFolder, snn, cnn);
 
 % Percentages calculation:
 nbr_infected = sum(predictions == categorical(1));
+pct_infected = nbr_infected/length(predictions)*100;
 
-fprintf('A total of %.0f', nbr_infected, ' RBCs have been predicted to be infected. This represents the %0.2f', (nbr_infected/length(predictions))*100, '\% of the total number of cells analyzed.');
+fprintf('A total of %d RBCs have been predicted to be infected.\nThis represents the %4.2f%% of the total number of cells analyzed.\n',nbr_infected,pct_infected);
 
 % Display of the potentially infected cells:
 for i = 1:nbr_infected
