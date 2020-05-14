@@ -1,3 +1,4 @@
+% Copyright (c) 2020 Maria Delgado-Ortet (github.com/mariadeor)
 % This is a CDSS for the diagnosis of malaria. It combines the usage of 
 % Deep Learning tools (Segmentation Neural Networks (SNN) and 
 % Convolutional Neural Networks (CNN) for classification) and image analysis 
