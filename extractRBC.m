@@ -6,8 +6,8 @@ function extractRBC(folder,snn)
     %'rbcs_foldername_mask', where foldername is the name of the 
     % input folder.
     % Inputs: 
-    % 1. folder - folder that contains the wide field blood smears.
-    % 2. snn - trained SNN to segment RBCs.
+    % 1. folder: folder that contains the wide field blood smears.
+    % 2. snn: trained SNN to segment RBCs.
    
     [~,foldername] = fileparts(folder);
     filenames = dir([folder '/*.jpg']);
