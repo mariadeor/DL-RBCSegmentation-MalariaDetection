@@ -1,5 +1,5 @@
 % Copyright (c) 2020 Maria Delgado-Ortet (github.com/mariadeor)
-function [predictions,imds] = predictMalaria(folder, snn, cnn)
+function [predictions,imds] = predict_malaria(folder, snn, cnn)
     
     % This function classifies masked and cropped RBCs from the wide field blood smears
     % into malaria parasitized or not.
