@@ -1,3 +1,5 @@
+% Copyright (c) 2020 Maria Delgado-Ortet (github.com/mariadeor) 
+
 sourceFolder = uigetdir; %It opens the browser and allows to pick the 
                          %folder that contain the images to analyze.
 
