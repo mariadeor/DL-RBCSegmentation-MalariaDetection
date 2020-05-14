@@ -31,6 +31,12 @@ The code runs on [MATLAB](https://www.mathworks.com/products/new_products/latest
 
 * [MATLAB](https://www.mathworks.com/company/newsroom/mathworks-announces-release-2018a-of-the-matlab-and-simulink-product-families.html) - Version 9.4.0.813654 (R2018a)
 
+## Complementary Material
+The following datasets were used to train, validate and test this DPS:
+* Delgado-Ortet, Maria; Molina, Angel; Alférez, Santiago; Rodellar, José; Merino, Anna (2020), “Dataset A: 186 digital images of MGG-stained blood smears from five patients with hereditary spherocytosis”, Mendeley Data, v1. http://dx.doi.org/10.17632/c37wnbbd3c.1
+* Delgado-Ortet, Maria; Molina, Angel; Alférez, Santiago; Rodellar, José; Merino, Anna (2020), “Dataset B: 331 digital images of MGG-stained blood smears from five malaria-infected patients”, Mendeley Data, v1. http://dx.doi.org/10.17632/2v6h4j48cx.1
+* Rajaraman S, Antani SK, Poostchi M, Silamut K, Hossain MA, Maude, RJ, Jaeger S, Thoma GR. (2018), "Malaria Datasets", https://ceb.nlm.nih.gov/malaria-datasets/
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/mariadeor/DL-RBCSegmentation-MalariaDetection-v01/blob/master/LICENSE) file for details.
