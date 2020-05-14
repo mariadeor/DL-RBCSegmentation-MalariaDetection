@@ -1,4 +1,9 @@
-% Copyright (c) 2020 Maria Delgado-Ortet (github.com/mariadeor) 
+% Copyright (c) 2020 Maria Delgado-Ortet (github.com/mariadeor)
+
+% This is a Digital Pathology System (DPS) for malaria detection with the 
+% use of neural networks. It accepts as input the digital images of peripheral 
+% blood (PB) smears in the selected folder and outputs the potentially 
+% infected Red Blood Cells (RBCs).
 
 sourceFolder = uigetdir; %It opens the browser and allows to pick the 
                          %folder that contain the images to analyze.
@@ -10,7 +15,6 @@ ssn = load('ssn.mat');
 ssn = ssn.net;
 
 [predictions, imds] = predict_malaria(sourceFolder, ssn, cnn);
-
 
 % Percentages calculation:
 nbr_infected = sum(predictions == categorical(1));
