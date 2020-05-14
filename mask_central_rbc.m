@@ -1,5 +1,5 @@
 % Copyright (c) 2020 Maria Delgado-Ortet (github.com/mariadeor)
-function mask = centralRBCmask(binary_label)
+function mask = mask_central_rbc(binary_label)
 
     % This function returns the mask of the centered RBC only at the input 
     % binary mask.
