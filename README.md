@@ -1,4 +1,4 @@
-# DL-RBCsegmentation-MalariaDetection-v01
+# DL-RBCsegmentation-MalariaDetection
 
 This is a Digital Pathology System (DPS) for malaria detection with the use of neural networks. It accepts as input digital images of peripheral blood (PB) smears and outputs the potentially infected Red Blood Cells (RBCs). The DPS consists of a three-stages pipeline: (1) a Segmentation Neural Network (SNN) segments the RBCs of the smears; (2) a mathematical morphology-based algorithm crops and masks the RBCs; and (3) a Convolutional Neural Network (CNN) classifies each RBC into malaria parasitised or not.
 
