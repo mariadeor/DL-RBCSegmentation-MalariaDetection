@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-The code runs on MATLAB (The MathWorks Inc., MA) - Version 9.8.0.1359463 (R2020a). It requires the [Deep Learning Toolbox](https://www.mathworks.com/products/deep-learning.html) and [Image Processing Toolbox](https://www.mathworks.com/products/image.html).
+The code runs on [MATLAB](https://www.mathworks.com/products/new_products/latest_features.html) (The MathWorks Inc., MA) - Version 9.8.0.1359463 (R2020a). It requires the [Deep Learning Toolbox](https://www.mathworks.com/products/deep-learning.html) and [Image Processing Toolbox](https://www.mathworks.com/products/image.html).
 
 ### Installing
 
@@ -34,3 +34,5 @@ The code runs on MATLAB (The MathWorks Inc., MA) - Version 9.8.0.1359463 (R2020a
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/mariadeor/DL-RBCSegmentation-MalariaDetection-v01/blob/master/LICENSE) file for details.
+
+
