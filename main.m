@@ -5,6 +5,9 @@
 % blood (PB) smears in the selected folder and outputs the potentially 
 % infected Red Blood Cells (RBCs).
 
+% To use it, run this file and select the folder where the digital images of 
+% wide field smears are.
+
 sourceFolder = uigetdir; %It opens the browser and allows to pick the 
                          %folder that contain the images to analyze.
 
