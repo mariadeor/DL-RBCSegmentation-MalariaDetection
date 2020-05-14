@@ -1,4 +1,4 @@
-% Copyright (c) 2020 Maria Delgado-Ortet (github.com/mariadeor)
+% Copyright (c) 2020 Maria Delgado-Ortet (github.com/mariadeor) 
 function [patch,boolean_flag] = get_patch(image, x, y, patch_radius)
 
     % This function returns a square patch from a larger image centered at a
