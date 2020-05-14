@@ -1,4 +1,4 @@
-function extractRBC(folder,net)
+function extractRBC(folder,snn)
            
     % This function saves the masked and cropped RBCs in a folder 
     % inside the working directory under the name of 
@@ -6,7 +6,7 @@ function extractRBC(folder,net)
     % input folder.
     % Inputs: 
     % 1. folder - folder that contains the wide field blood smears.
-    % 2. net - trained SNN to segment RBCs.
+    % 2. snn - trained SNN to segment RBCs.
    
     [~,foldername] = fileparts(folder);
     filenames = dir([folder '/*.jpg']);
@@ -16,7 +16,7 @@ function extractRBC(folder,net)
         fullimds.ReadFcn = @(loc)imresize(imread(loc),inputSize);
 
     %STEP 2) Semantic segmentation of the smears.
-        pxdsSegmentation = semanticseg(fullimds, net, ...
+        pxdsSegmentation = semanticseg(fullimds, snn, ...
             'MiniBatchSize',4,...
             'WriteLocation',tempdir,...
             'Verbose',false);
