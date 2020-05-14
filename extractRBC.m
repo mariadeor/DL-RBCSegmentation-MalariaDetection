@@ -1,5 +1,5 @@
 % Copyright (c) 2020 Maria Delgado-Ortet (github.com/mariadeor)
-function extractRBC(folder,snn)
+function extract_rbc(folder,snn)
            
     % This function saves the masked and cropped RBCs in a folder 
     % inside the working directory under the name of 
