@@ -1,11 +1,13 @@
-function mask = centralRBCmask(label)
-% RBCmask function returns a binary image all 0s except the central RBC.
-%   Inputs: Label patch. In it, all pixels belonging to RBCs in the image
-%   are 1 but there is only interest in keeping the central one.
-    
-    label = imclearborder(label);
-    label = imfill(label);
+function mask = centralRBCmask(binary_label)
+
+    % This function returns the mask of the centered RBC only at the input 
+    % binary mask.
+    % Inputs: 
+    % 1. binary_label: Pixels equal to 1 belong to RBCs.
+
+    binary_label = imclearborder(binary_label); % Removal of the peripheral RBCs.
+    binary_label = imfill(binary_label); % Filling of the holes of the RBC.
     SE = strel('disk',50);
-    mask = imclose(label,SE);
+    mask = imclose(binary_label,SE); % Closing of the mask.
     
 end
