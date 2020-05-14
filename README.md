@@ -35,4 +35,4 @@ The code runs on [MATLAB](https://www.mathworks.com/products/new_products/latest
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/mariadeor/DL-RBCSegmentation-MalariaDetection-v01/blob/master/LICENSE) file for details.
 
-
+Copyright (c) 2020 Maria Delgado-Ortet (github.com/mariadeor)
